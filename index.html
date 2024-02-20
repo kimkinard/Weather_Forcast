@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,, initial-scale=1.0">
     <link rel="stylesheet" href="src/index.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +14,8 @@
 <body>
     <div class="weather-app">
     <header>
-        <form class="search-form">
-            <input type ="search" placeholder ="Enter a City.." required class="search-form-input"/>
+        <form class="search-form" id="search-form">
+            <input type ="search" placeholder ="Enter a City.." required id="search-form-input" class="search-form-input"/>
             <input type ="submit" value ="Search" class="search-form-button"/>
         </form>
     </header>
@@ -23,7 +23,7 @@
 <main>
         <div class="weather-app-data">
     <div>
-        <h1 class="weather-app-city"> Paris</h1>
+        <h1 class="weather-app-city" id="city"> Paris</h1>
     <p class="weather-app-details">
         Tuesday 20:35, mist <br/>
         Humidity: <strong>97%</strong>, Wind: <strong>4.63km/h</strong>
@@ -43,6 +43,7 @@
       <a href="https://weather-app-kk.netlify.app" target="_blank"> Netifly. </a>
        </footer>
     </div>
+    <script src="src/index.js"></script>
    </body>
 </html>
 
